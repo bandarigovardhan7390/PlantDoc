@@ -1,0 +1,19 @@
+{
+  "run": "yolo26n_seed42",
+  "model": "yolo26n.pt",
+  "imgsz": 640,
+  "seed": 42,
+  "smoke_test": false,
+  "val": {
+    "map50": 0.8173,
+    "map50_95": 0.6249,
+    "precision": 0.7899,
+    "recall": 0.7549
+  },
+  "test": {
+    "map50": 0.745,
+    "map50_95": 0.5857,
+    "precision": 0.753,
+    "recall": 0.6801
+  }
+}

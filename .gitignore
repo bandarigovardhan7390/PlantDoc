@@ -1,0 +1,16 @@
+﻿*.pt
+*.pte
+*.onnx.data
+datasets/
+fieldplant*/
+android_app/**/build/
+android_app/.gradle/
+android_app/local.properties
+.idea/
+*.apk
+*.aab
+__pycache__/
+.venv/
+venv/
+*.bak
+*.zip

@@ -1,0 +1,795 @@
+{
+  "version": "0.3-draft-tomato",
+  "review_status": "DRAFT. An agronomist or extension officer must check every line before field use. Hindi and Telugu text is a machine draft for native-speaker review.",
+  "scope_note": "Tomato only. Pesticide options come from the NIPHM AESA-based IPM package for tomato (an older edition). Products from that package that may be banned or restricted (phorate, carbofuran, dimethoate, malathion, oxydemeton-methyl) were left out as a precaution; this was not a verified legal check. Confirm every entry, and every omission, against the current CIB&RC registered list before field use. Doses are reference doses only; the current registered label always overrides this file. Organic and biological options are left out for now by design.",
+  "common": {
+    "Mild": [
+      "Remove the worst affected leaves and keep them away from the plot (do not compost them).",
+      "Look at the same plants again in 3 to 5 days to see if it is spreading.",
+      "Wash your hands and tools after touching affected plants, and avoid working among wet plants."
+    ],
+    "Moderate": [
+      "Remove affected leaves and check the plants around them for the same signs.",
+      "Start the control steps for this problem below, beginning with the farm-practice (cultural) measures.",
+      "If you use any spray, use only products approved locally for this crop and follow the label. Ask your extension officer if unsure."
+    ],
+    "Severe": [
+      "Contact your agriculture extension officer today and show them this photo.",
+      "Isolate or remove badly affected plants so they do not infect others. Do not carry sap from sick plants to healthy ones on hands or tools.",
+      "Do not take seed, cuttings or seedlings from this plot."
+    ]
+  },
+  "ui": {
+    "advice_title": {
+      "en": "Advice for your plant",
+      "hi": "आपके पौधे के लिए सलाह",
+      "te": "మీ మొక్క కోసం సలహా"
+    },
+    "language": {
+      "en": "Language",
+      "hi": "भाषा",
+      "te": "భాష"
+    },
+    "plot_size": {
+      "en": "Plot size",
+      "hi": "खेत का आकार",
+      "te": "పొలం పరిమాణం"
+    },
+    "small_plot": {
+      "en": "Small plot",
+      "hi": "छोटा प्लॉट",
+      "te": "చిన్న ప్లాట్"
+    },
+    "field": {
+      "en": "Field",
+      "hi": "खेत",
+      "te": "పొలం"
+    },
+    "severity_test": {
+      "en": "Severity (temporary: choose by hand)",
+      "hi": "गंभीरता (अस्थायी: हाथ से चुनें)",
+      "te": "తీవ్రత (తాత్కాలికం: మీరే ఎంచుకోండి)"
+    },
+    "severity_Mild": {
+      "en": "Mild",
+      "hi": "हल्का",
+      "te": "స్వల్పం"
+    },
+    "severity_Moderate": {
+      "en": "Moderate",
+      "hi": "मध्यम",
+      "te": "మధ్యస్థం"
+    },
+    "severity_Severe": {
+      "en": "Severe",
+      "hi": "गंभीर",
+      "te": "తీవ్రం"
+    },
+    "what_found": {
+      "en": "What we found",
+      "hi": "हमें क्या मिला",
+      "te": "మేము ఏమి కనుగొన్నాము"
+    },
+    "how_serious": {
+      "en": "How serious",
+      "hi": "कितना गंभीर",
+      "te": "ఎంత తీవ్రం"
+    },
+    "what_to_do": {
+      "en": "What to do",
+      "hi": "क्या करें",
+      "te": "ఏమి చేయాలి"
+    },
+    "pests_to_check": {
+      "en": "Pests to check",
+      "hi": "जाँचने वाले कीट",
+      "te": "తనిఖీ చేయవలసిన పురుగులు"
+    },
+    "if_untreated": {
+      "en": "If nothing is done",
+      "hi": "अगर कुछ न किया जाए",
+      "te": "ఏమీ చేయకపోతే"
+    },
+    "plot_advice": {
+      "en": "For your plot",
+      "hi": "आपके खेत के लिए",
+      "te": "మీ పొలం కోసం"
+    },
+    "when_to_call": {
+      "en": "When to call for help",
+      "hi": "कब मदद लें",
+      "te": "ఎప్పుడు సహాయం కోరాలి"
+    },
+    "confidence": {
+      "en": "Confidence",
+      "hi": "विश्वास",
+      "te": "నమ్మకం"
+    },
+    "healthy_note": {
+      "en": "Healthy leaf: no severity needed.",
+      "hi": "स्वस्थ पत्ती: गंभीरता की ज़रूरत नहीं।",
+      "te": "ఆరోగ్యకరమైన ఆకు: తీవ్రత అవసరం లేదు."
+    },
+    "not_sure": {
+      "en": "I am not sure about this photo. Take a clear, close photo of one leaf in daylight, or ask an expert.",
+      "hi": "मुझे इस फोटो के बारे में पक्का नहीं पता। दिन की रोशनी में एक पत्ती की साफ़, पास से फोटो लें या किसी विशेषज्ञ से पूछें।",
+      "te": "ఈ ఫోటో గురించి నాకు ఖచ్చితంగా తెలియదు. పగటి వెలుతురులో ఒక ఆకు యొక్క స్పష్టమైన, దగ్గరి ఫోటో తీయండి లేదా నిపుణుడిని అడగండి."
+    },
+    "call_expert_severe": {
+      "en": "This looks serious. Please contact your agriculture extension officer today.",
+      "hi": "यह गंभीर लगता है। कृपया आज ही अपने कृषि विस्तार अधिकारी से संपर्क करें।",
+      "te": "ఇది తీవ్రంగా కనిపిస్తోంది. దయచేసి ఈ రోజే మీ వ్యవసాయ విస్తరణ అధికారిని సంప్రదించండి."
+    },
+    "disclaimer": {
+      "en": "This is guidance, not a final diagnosis. Check with your local agriculture extension officer before using any chemical.",
+      "hi": "यह केवल मार्गदर्शन है, अंतिम निदान नहीं। कोई भी रसायन इस्तेमाल करने से पहले अपने स्थानीय कृषि विस्तार अधिकारी से सलाह लें।",
+      "te": "ఇది కేవలం మార్గదర్శకం, తుది నిర్ధారణ కాదు. ఏదైనా రసాయనం వాడే ముందు మీ స్థానిక వ్యవసాయ విస్తరణ అధికారిని సంప్రదించండి."
+    },
+    "explain_ai": {
+      "en": "Explain with AI (Llama)",
+      "hi": "AI से समझाएँ (Llama)",
+      "te": "AIతో వివరించండి (Llama)"
+    },
+    "stop": {
+      "en": "Stop",
+      "hi": "रोकें",
+      "te": "ఆపండి"
+    },
+    "ai_title": {
+      "en": "AI explanation",
+      "hi": "AI की व्याख्या",
+      "te": "AI వివరణ"
+    },
+    "field_check_title": {
+      "en": "Tell us about your plants",
+      "hi": "अपने पौधों के बारे में बताएं",
+      "te": "మీ మొక్కల గురించి చెప్పండి"
+    },
+    "plants_checked": {
+      "en": "How many plants did you check?",
+      "hi": "आपने कितने पौधे जांचे?",
+      "te": "మీరు ఎన్ని మొక్కలు పరిశీలించారు?"
+    },
+    "plants_affected": {
+      "en": "How many show this problem?",
+      "hi": "कितनों में यह समस्या दिखी?",
+      "te": "ఎన్నింటిలో ఈ సమస్య కనిపించింది?"
+    },
+    "spreading_q": {
+      "en": "Is it spreading compared to your last check?",
+      "hi": "क्या यह आपकी पिछली जांच की तुलना में फैल रहा है?",
+      "te": "మీ మునుపటి పరిశీలనతో పోలిస్తే ఇది వ్యాపిస్తోందా?"
+    },
+    "spreading_yes": {
+      "en": "Yes",
+      "hi": "हाँ",
+      "te": "అవును"
+    },
+    "spreading_no": {
+      "en": "No",
+      "hi": "नहीं",
+      "te": "కాదు"
+    },
+    "spreading_first": {
+      "en": "First check",
+      "hi": "पहली जांच",
+      "te": "మొదటి పరిశీలన"
+    },
+    "wet_q": {
+      "en": "Has it rained or been humid in the last few days?",
+      "hi": "पिछले कुछ दिनों में बारिश या नमी रही है?",
+      "te": "గత కొన్ని రోజుల్లో వర్షం పడిందా లేదా తేమగా ఉందా?"
+    },
+    "estimated_severity": {
+      "en": "Estimated severity",
+      "hi": "अनुमानित गंभीरता",
+      "te": "అంచనా వేసిన తీవ్రత"
+    },
+    "listen": {
+      "en": "🔊 Listen",
+      "hi": "🔊 सुनें",
+      "te": "🔊 వినండి"
+    },
+    "listen_unavailable": {
+      "en": "A spoken voice for this language is not installed on this phone.",
+      "hi": "इस भाषा के लिए आवाज़ इस फोन पर इंस्टॉल नहीं है।",
+      "te": "ఈ భాషకు మాట్లాడే స్వరం ఈ ఫోన్‌లో ఇన్‌స్టాల్ చేయలేదు."
+    },
+    "prevention": {
+      "en": "Prevention",
+      "hi": "रोकथाम",
+      "te": "నివారణ"
+    },
+    "chem_options": {
+      "en": "Pesticide options (reference only)",
+      "hi": "कीटनाशक/फफूंदनाशक विकल्प (केवल संदर्भ)",
+      "te": "పురుగుమందు/శిలీంధ్రనాశిని ఎంపికలు (సూచన మాత్రమే)"
+    },
+    "chem_disclaimer": {
+      "en": "Reference doses from the NIPHM IPM package for tomato (an older edition; chemicals that are now banned or restricted were left out). Always follow the current product label and your extension officer's advice, wear protective clothing, and keep the waiting period before harvest. Do not use the same product again and again; rotate between different groups.",
+      "hi": "ये टमाटर के लिए NIPHM IPM पैकेज की संदर्भ मात्राएँ हैं (पुराना संस्करण; जो रसायन अब प्रतिबंधित या सीमित हैं उन्हें हटा दिया गया है)। हमेशा उत्पाद के वर्तमान लेबल और अपने विस्तार अधिकारी की सलाह मानें, सुरक्षात्मक कपड़े पहनें और कटाई से पहले प्रतीक्षा अवधि का पालन करें। एक ही दवा बार-बार न डालें; अलग-अलग समूह की दवाएँ बदल-बदलकर प्रयोग करें।",
+      "te": "ఇవి టమాటాకు NIPHM IPM ప్యాకేజీలోని సూచనా మోతాదులు (పాత ప్రచురణ; ఇప్పుడు నిషేధించిన లేదా పరిమితం చేసిన రసాయనాలను తొలగించాము). ఎల్లప్పుడూ ప్రస్తుత ఉత్పత్తి లేబుల్‌ను, మీ విస్తరణ అధికారి సలహాను పాటించండి, రక్షణ దుస్తులు ధరించండి, కోతకు ముందు వేచి ఉండవలసిన కాలాన్ని పాటించండి. ఒకే మందును మళ్లీ మళ్లీ వాడకండి; వేర్వేరు గ్రూపుల మందులను మార్చి వాడండి."
+    },
+    "chem_none": {
+      "en": "No pesticide options are listed yet for this crop. Ask your extension officer.",
+      "hi": "इस फसल के लिए अभी कोई कीटनाशक विकल्प सूचीबद्ध नहीं हैं। अपने विस्तार अधिकारी से पूछें।",
+      "te": "ఈ పంటకు ఇంకా పురుగుమందు ఎంపికలు జాబితా చేయలేదు. మీ విస్తరణ అధికారిని అడగండి."
+    },
+    "chem_wait": {
+      "en": "Spray options appear when the problem is Moderate or Severe. Mild problems are handled with the farm steps above.",
+      "hi": "समस्या मध्यम या गंभीर होने पर छिड़काव के विकल्प दिखते हैं। हल्की समस्या के लिए ऊपर के खेती के उपाय काफ़ी हैं।",
+      "te": "సమస్య మధ్యస్థం లేదా తీవ్రం అయినప్పుడు పిచికారీ ఎంపికలు కనిపిస్తాయి. స్వల్ప సమస్యలకు పై వ్యవసాయ చర్యలు సరిపోతాయి."
+    },
+    "dose_label": {
+      "en": "Reference dose",
+      "hi": "संदर्भ मात्रा",
+      "te": "సూచనా మోతాదు"
+    },
+    "source_title": {
+      "en": "Source",
+      "hi": "स्रोत",
+      "te": "ఆధారం"
+    },
+    "explanation_title": {
+      "en": "Explanation",
+      "hi": "व्याख्या",
+      "te": "వివరణ"
+    },
+    "crop_label": {
+      "en": "Crop",
+      "hi": "फसल",
+      "te": "పంట"
+    },
+    "crop_Tomato": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "te": "టమాటా"
+    },
+    "narr_found": {
+      "en": "On this {crop} leaf the app found: {issue}. The app is {pct}% sure.",
+      "hi": "इस {crop} की पत्ती पर ऐप को मिला: {issue}। ऐप {pct}% निश्चित है।",
+      "te": "ఈ {crop} ఆకుపై యాప్ కనుగొన్నది: {issue}. యాప్‌కు {pct}% నమ్మకం ఉంది."
+    },
+    "narr_sev": {
+      "en": "The problem looks {sev}.",
+      "hi": "समस्या {sev} दिखती है।",
+      "te": "సమస్య {sev}గా కనిపిస్తోంది."
+    },
+    "narr_do": {
+      "en": "What to do first: {steps}",
+      "hi": "सबसे पहले यह करें: {steps}",
+      "te": "ముందుగా ఇలా చేయండి: {steps}"
+    },
+    "narr_pest": {
+      "en": "Also check for: {pests}.",
+      "hi": "इन्हें भी जाँचें: {pests}।",
+      "te": "వీటిని కూడా పరిశీలించండి: {pests}."
+    },
+    "narr_call": {
+      "en": "Call your extension officer if: {call}",
+      "hi": "ऐसा होने पर अपने विस्तार अधिकारी से संपर्क करें: {call}",
+      "te": "ఇలా జరిగితే మీ విస్తరణ అధికారిని సంప్రదించండి: {call}"
+    },
+    "telugu_note": {
+      "en": "Telugu: the advice and the explanation come from reviewed Telugu text (Llama does not write Telugu reliably yet).",
+      "hi": "तेलुगु: सलाह और व्याख्या समीक्षित तेलुगु पाठ से आती है।",
+      "te": "తెలుగు: సలహా, వివరణ సమీక్షించిన తెలుగు పాఠ్యం నుండి వస్తాయి (Llama ఇంకా తెలుగును నమ్మదగినంతగా రాయదు)."
+    },
+    "tagline": {
+      "en": "Smart farming. Smarter decisions.",
+      "hi": "स्मार्ट खेती। समझदार फैसले।",
+      "te": "స్మార్ట్ వ్యవసాయం. తెలివైన నిర్ణయాలు."
+    },
+    "welcome": {
+      "en": "Welcome, Farmer!",
+      "hi": "स्वागत है, किसान भाई!",
+      "te": "స్వాగతం, రైతు సోదరా!"
+    },
+    "subtitle": {
+      "en": "Your offline crop health assistant",
+      "hi": "आपका ऑफ़लाइन फसल स्वास्थ्य सहायक",
+      "te": "మీ ఆఫ్‌లైన్ పంట ఆరోగ్య సహాయకుడు"
+    },
+    "crop_selected": {
+      "en": "Crop selected",
+      "hi": "चुनी हुई फसल",
+      "te": "ఎంచుకున్న పంట"
+    },
+    "leaf_detection": {
+      "en": "Leaf disease detection",
+      "hi": "पत्ती रोग की पहचान",
+      "te": "ఆకు తెగులు గుర్తింపు"
+    },
+    "model_status": {
+      "en": "AI model status",
+      "hi": "AI मॉडल की स्थिति",
+      "te": "AI మోడల్ స్థితి"
+    },
+    "model_loading": {
+      "en": "Loading AI model...",
+      "hi": "AI मॉडल लोड हो रहा है...",
+      "te": "AI మోడల్ లోడ్ అవుతోంది..."
+    },
+    "model_ready": {
+      "en": "AI model ready • Offline",
+      "hi": "AI मॉडल तैयार • ऑफ़लाइन",
+      "te": "AI మోడల్ సిద్ధం • ఆఫ్‌లైన్"
+    },
+    "model_failed": {
+      "en": "Model loading failed",
+      "hi": "मॉडल लोड नहीं हो सका",
+      "te": "మోడల్ లోడ్ కాలేదు"
+    },
+    "analyze_title": {
+      "en": "Analyze your crop",
+      "hi": "अपनी फसल की जाँच करें",
+      "te": "మీ పంటను పరిశీలించండి"
+    },
+    "btn_capture": {
+      "en": "📷  Capture Leaf Image",
+      "hi": "📷  पत्ती की फोटो लें",
+      "te": "📷  ఆకు ఫోటో తీయండి"
+    },
+    "btn_gallery": {
+      "en": "Select Image from Gallery",
+      "hi": "गैलरी से फोटो चुनें",
+      "te": "గ్యాలరీ నుండి ఫోటో ఎంచుకోండి"
+    },
+    "btn_analyze": {
+      "en": "Analyze Image",
+      "hi": "फोटो की जाँच करें",
+      "te": "ఫోటోను విశ్లేషించండి"
+    },
+    "analyzing": {
+      "en": "Analyzing image...",
+      "hi": "फोटो की जाँच हो रही है...",
+      "te": "ఫోటోను విశ్లేషిస్తోంది..."
+    },
+    "msg_none": {
+      "en": "No image selected yet.",
+      "hi": "अभी तक कोई फोटो नहीं चुनी गई।",
+      "te": "ఇంకా ఫోటో ఎంచుకోలేదు."
+    },
+    "msg_camera_ok": {
+      "en": "Camera image captured.",
+      "hi": "कैमरे से फोटो ली गई।",
+      "te": "కెమెరా ఫోటో తీశారు."
+    },
+    "msg_camera_cancel": {
+      "en": "Camera capture cancelled.",
+      "hi": "कैमरा रद्द किया गया।",
+      "te": "కెమెరా రద్దు చేయబడింది."
+    },
+    "msg_gallery_ok": {
+      "en": "Gallery image selected.",
+      "hi": "गैलरी से फोटो चुनी गई।",
+      "te": "గ్యాలరీ నుండి ఫోటో ఎంచుకున్నారు."
+    },
+    "msg_load_fail": {
+      "en": "Unable to load image.",
+      "hi": "फोटो लोड नहीं हो सकी।",
+      "te": "ఫోటో లోడ్ చేయలేకపోయాం."
+    },
+    "msg_img_fail": {
+      "en": "Image loading failed.",
+      "hi": "फोटो लोड करना विफल रहा।",
+      "te": "ఫోటో లోడ్ విఫలమైంది."
+    },
+    "msg_done": {
+      "en": "Analysis completed.",
+      "hi": "जाँच पूरी हुई।",
+      "te": "విశ్లేషణ పూర్తయింది."
+    },
+    "det_title": {
+      "en": "Detection results",
+      "hi": "जाँच के नतीजे",
+      "te": "గుర్తింపు ఫలితాలు"
+    },
+    "det_none": {
+      "en": "No leaf condition found",
+      "hi": "पत्ती में कोई समस्या नहीं मिली",
+      "te": "ఆకులో ఏ సమస్య కనిపించలేదు"
+    },
+    "det_none_hint": {
+      "en": "Try a closer, sharper photo of one leaf in daylight.",
+      "hi": "दिन की रोशनी में एक पत्ती की पास से, साफ़ फोटो लें।",
+      "te": "పగటి వెలుతురులో ఒక ఆకు యొక్క దగ్గరి, స్పష్టమైన ఫోటో తీయండి."
+    },
+    "det_top": {
+      "en": "Most likely condition",
+      "hi": "सबसे संभावित समस्या",
+      "te": "అత్యంత అవకాశం ఉన్న సమస్య"
+    },
+    "leaves_found": {
+      "en": "Leaves found",
+      "hi": "मिली पत्तियाँ",
+      "te": "కనిపించిన ఆకులు"
+    },
+    "inference_time": {
+      "en": "Inference time",
+      "hi": "जाँच में लगा समय",
+      "te": "విశ్లేషణ సమయం"
+    },
+    "det_not_sure": {
+      "en": "Not sure: confidence is below 50%. Retake the photo or ask an expert.",
+      "hi": "पक्का नहीं: विश्वास 50% से कम है। फोटो दोबारा लें या किसी विशेषज्ञ से पूछें।",
+      "te": "ఖచ్చితంగా తెలియదు: నమ్మకం 50% కంటే తక్కువ. ఫోటో మళ్లీ తీయండి లేదా నిపుణుడిని అడగండి."
+    },
+    "det_ok": {
+      "en": "Model prediction available. Verify with field observations.",
+      "hi": "मॉडल का अनुमान उपलब्ध है। खेत में खुद देखकर पुष्टि करें।",
+      "te": "మోడల్ అంచనా అందుబాటులో ఉంది. పొలంలో స్వయంగా చూసి నిర్ధారించుకోండి."
+    },
+    "error_label": {
+      "en": "Error",
+      "hi": "त्रुटि",
+      "te": "లోపం"
+    },
+    "footer_offline": {
+      "en": "Offline mode • On-device AI",
+      "hi": "ऑफ़लाइन मोड • फोन पर चलने वाला AI",
+      "te": "ఆఫ్‌లైన్ మోడ్ • ఫోన్‌లోనే AI"
+    },
+    "llama_starting": {
+      "en": "Starting Llama. The first run can take a minute.",
+      "hi": "Llama शुरू हो रहा है। पहली बार में एक मिनट लग सकता है।",
+      "te": "Llama ప్రారంభమవుతోంది. మొదటిసారి ఒక నిమిషం పట్టవచ్చు."
+    },
+    "llama_time": {
+      "en": "Written on this phone in {s} s",
+      "hi": "इस फोन पर {s} सेकंड में लिखा गया",
+      "te": "ఈ ఫోన్‌లో {s} సెకన్లలో రాయబడింది"
+    },
+    "listen_advice": {
+      "en": "🔊 Listen to the advice",
+      "hi": "🔊 सलाह सुनें",
+      "te": "🔊 సలహా వినండి"
+    },
+    "issue_Tomato healthy": {
+      "en": "Tomato leaf looks healthy",
+      "hi": "टमाटर की पत्ती स्वस्थ दिखती है",
+      "te": "టమాటా ఆకు ఆరోగ్యంగా కనిపిస్తోంది"
+    },
+    "issue_Tomato Brown Spots": {
+      "en": "Tomato leaf with brown spots",
+      "hi": "टमाटर की पत्ती पर भूरे धब्बे",
+      "te": "గోధుమ రంగు మచ్చలున్న టమాటా ఆకు"
+    },
+    "issue_Tomato blight leaf": {
+      "en": "Tomato leaf blight (early or late blight)",
+      "hi": "टमाटर पत्ती झुलसा (अगेती या पछेती झुलसा)",
+      "te": "టమాటా ఆకు మాడు తెగులు (ఎర్లీ బ్లైట్ లేదా లేట్ బ్లైట్)"
+    },
+    "issue_Tomato virus": {
+      "en": "Tomato virus (leaf curl or mosaic)",
+      "hi": "टमाटर वायरस (पत्ती मुड़न या मोज़ेक)",
+      "te": "టమాటా వైరస్ (ఆకు ముడత లేదా మొజాయిక్)"
+    },
+    "choose_language": {
+      "en": "Choose your language",
+      "hi": "अपनी भाषा चुनें",
+      "te": "మీ భాషను ఎంచుకోండి"
+    },
+    "scan_crop": {
+      "en": "Scan a crop",
+      "hi": "फसल स्कैन करें",
+      "te": "పంటను స్కాన్ చేయండి"
+    },
+    "scan_crop_sub": {
+      "en": "Find the disease from a leaf photo",
+      "hi": "पत्ती की फोटो से रोग पहचानें",
+      "te": "ఆకు ఫోటో నుండి తెగులును గుర్తించండి"
+    },
+    "last_result": {
+      "en": "Last result",
+      "hi": "पिछला नतीजा",
+      "te": "చివరి ఫలితం"
+    },
+    "back": {
+      "en": "Back",
+      "hi": "वापस",
+      "te": "వెనుకకు"
+    },
+    "scan_another": {
+      "en": "Scan another leaf",
+      "hi": "दूसरी पत्ती स्कैन करें",
+      "te": "మరో ఆకును స్కాన్ చేయండి"
+    },
+    "how_title": {
+      "en": "How it works",
+      "hi": "यह कैसे काम करता है",
+      "te": "ఇది ఎలా పనిచేస్తుంది"
+    },
+    "how_1": {
+      "en": "1. Take a clear photo of one leaf",
+      "hi": "1. एक पत्ती की साफ़ फोटो लें",
+      "te": "1. ఒక ఆకు యొక్క స్పష్టమైన ఫోటో తీయండి"
+    },
+    "how_2": {
+      "en": "2. Answer 4 short questions about your plants",
+      "hi": "2. अपने पौधों के बारे में 4 छोटे सवालों के जवाब दें",
+      "te": "2. మీ మొక్కల గురించి 4 చిన్న ప్రశ్నలకు జవాబు ఇవ్వండి"
+    },
+    "how_3": {
+      "en": "3. Get advice and listen to it",
+      "hi": "3. सलाह पाएं और उसे सुनें",
+      "te": "3. సలహా పొందండి, వినండి"
+    },
+    "photo_tip": {
+      "en": "Tip: fill the frame with one leaf, in daylight.",
+      "hi": "सुझाव: दिन की रोशनी में एक पत्ती से फ्रेम भरें।",
+      "te": "సూచన: పగటి వెలుతురులో ఒక ఆకుతో ఫ్రేమ్ నింపండి."
+    },
+    "private_note": {
+      "en": "Your photos stay on this phone. No internet is needed.",
+      "hi": "आपकी फोटो इसी फोन पर रहती हैं। इंटरनेट की ज़रूरत नहीं।",
+      "te": "మీ ఫోటోలు ఈ ఫోన్‌లోనే ఉంటాయి. ఇంటర్నెట్ అవసరం లేదు."
+    },
+    "reviewed_note": {
+      "en": "The advice and the explanation come from reviewed text written for this app.",
+      "hi": "सलाह और व्याख्या इस ऐप के लिए लिखे गए समीक्षित पाठ से आती है।",
+      "te": "సలహా, వివరణ ఈ యాప్ కోసం రాసిన సమీక్షించిన పాఠ్యం నుండి వస్తాయి."
+    }
+  },
+  "issues": {
+    "Tomato healthy": {
+      "crop": "Tomato",
+      "display": "Tomato leaf looks healthy",
+      "type": "healthy",
+      "summary": "The leaf looks healthy. This does not rule out pests on other parts of the plant or problems that are not visible yet.",
+      "pests_to_check": [
+        {
+          "name": "Fruit borer caterpillars (Helicoverpa)",
+          "why": "young caterpillars eat leaves, then bore round holes into fruit"
+        },
+        {
+          "name": "Tobacco caterpillar (Spodoptera)",
+          "why": "scrapes leaves, then makes irregular holes and can strip the plant"
+        },
+        {
+          "name": "Whitefly",
+          "why": "small white flies under leaves; they carry leaf curl virus"
+        },
+        {
+          "name": "Serpentine leaf miner",
+          "why": "thin winding tunnels inside the leaf"
+        },
+        {
+          "name": "Thrips and spider mites",
+          "why": "bronzing or speckled leaves; mites make fine webbing in hot dry weather"
+        }
+      ],
+      "effects_if_untreated": [],
+      "actions": {
+        "Healthy": [
+          "Scout once a week: pick 5 spots in the field and check 5 plants at each spot, looking under the leaves and at the shoot tips.",
+          "Hang yellow sticky traps just above the plants to watch for whitefly (4 to 5 per acre), and blue traps for thrips.",
+          "Put up pheromone traps (4 to 5 per acre) to watch for fruit borer and tobacco caterpillar moths.",
+          "Keep the field and nursery free of weeds and old crop residue.",
+          "If you see pests or damage, switch to Pest scan and take a close photo."
+        ]
+      },
+      "area_guidance": {
+        "small_plot": "Check every plant when you water.",
+        "field": "Walk a zigzag across the field and check a few plants at each stop."
+      },
+      "escalate_if": "You see sudden wilting, many curled or spotted leaves, or insects in large numbers.",
+      "prevention": [
+        "Raise seedlings on raised beds or in trays so that water drains away.",
+        "Use healthy seed and seedlings, and rotate tomato with a cereal crop such as maize or sorghum.",
+        "Grow 4 rows of maize or sorghum around the field as a guard crop."
+      ],
+      "chemical_options": [],
+      "sources": [
+        "NIPHM / DPPQS, Govt. of India: AESA based IPM Package No. 18 - Tomato (niphm.gov.in/IPMPackages/Tomato.pdf)"
+      ]
+    },
+    "Tomato Brown Spots": {
+      "crop": "Tomato",
+      "display": "Tomato leaf with brown spots",
+      "type": "fungal_or_bacterial",
+      "summary": "Brown or dark spots on the leaf. Several diseases look alike at this stage, such as bacterial spot and fungal leaf spots, and the app cannot tell which one it is.",
+      "pests_to_check": [
+        {
+          "name": "No special insect vector",
+          "why": "bacterial spot and Septoria spread by rain splash, wind, infected seed and plant debris, and on hands and clothes"
+        },
+        {
+          "name": "Leaf miner and chewing insects",
+          "why": "wounds from insects can help germs enter, so check for tunnels and holes"
+        }
+      ],
+      "effects_if_untreated": [
+        "Spots join together, leaves turn yellow and drop.",
+        "With fewer leaves the plant makes less food, so fruit is smaller and can get sunscald.",
+        "Rain splash and overhead watering carry the problem to nearby plants.",
+        "Spots on fruit lower its market value."
+      ],
+      "actions": {
+        "Mild": [
+          "Water at the base of the plant, not over the leaves.",
+          "Stake or prune so air can move between plants."
+        ],
+        "Moderate": [
+          "Do not work in the plot while leaves are wet, and wash hands and tools after touching spotted plants.",
+          "Remove heavily spotted lower leaves first and destroy them.",
+          "Ask the extension officer to confirm if it is bacterial spot or a fungal leaf spot such as Septoria; the spray choice is different."
+        ],
+        "Severe": [
+          "Ask the extension officer to confirm exactly which disease it is, because the right treatment depends on whether it is bacterial or fungal.",
+          "Do not save seed from these plants."
+        ]
+      },
+      "area_guidance": {
+        "small_plot": "Check every plant and remove affected leaves by hand.",
+        "field": "Check plants at several spots across the field in a zigzag and count how many show spots. If many do, ask the extension officer about treating the whole field."
+      },
+      "escalate_if": "Spots are on the fruit, spreading fast after rain, or more than a few plants are affected.",
+      "prevention": [
+        "Use disease-free seed and seedlings.",
+        "Rotate with non-host crops and do not leave old plant debris in the field.",
+        "Remove weeds such as black nightshade, which can carry the disease."
+      ],
+      "chemical_options": [
+        {
+          "name": "Mancozeb 75% WP",
+          "use_for": "Septoria leaf spot (a fungal disease)",
+          "dose": "600 to 800 g in 300 l of water per acre"
+        },
+        {
+          "name": "Streptocycline (streptomycin sulphate 9% + tetracycline hydrochloride 1% SP)",
+          "use_for": "bacterial leaf spot only (not for fungal spots)",
+          "dose": "40 to 100 ppm solution (ask your extension officer how much to mix per tank); two sprays: one on the seed bed before transplanting and one in the main field after transplanting"
+        }
+      ],
+      "sources": [
+        "NIPHM / DPPQS, Govt. of India: AESA based IPM Package No. 18 - Tomato (niphm.gov.in/IPMPackages/Tomato.pdf)",
+        "Doses are the reference per-acre doses printed in that package. Check the current CIB&RC registered label before use."
+      ]
+    },
+    "Tomato blight leaf": {
+      "crop": "Tomato",
+      "display": "Tomato leaf blight (early or late blight)",
+      "type": "fungal_like",
+      "summary": "Large brown patches, often with yellow edges. Early blight and late blight look similar in a photo. Late blight can spread very fast in cool, wet, cloudy weather.",
+      "pests_to_check": [
+        {
+          "name": "No special insect vector",
+          "why": "spores travel on wind, rain water, insects, workers and machinery"
+        }
+      ],
+      "effects_if_untreated": [
+        "Leaves die and drop, which exposes fruit to sunburn.",
+        "In cool wet weather late blight can reach stems and fruit and destroy a crop within days.",
+        "Spores travel on wind and rain to neighbouring fields."
+      ],
+      "actions": {
+        "Mild": [
+          "Remove affected lower leaves and keep leaves dry.",
+          "Avoid overhead watering; give light irrigation."
+        ],
+        "Moderate": [
+          "Destroy weeds and volunteer tomato plants, which can carry the disease.",
+          "Check neighbouring plants every day and watch the weather: warm, rainy and wet days make it spread faster.",
+          "If it keeps spreading after 3 to 5 days, ask your extension officer about the spray options below."
+        ],
+        "Severe": [
+          "Act the same day: contact the extension officer.",
+          "Remove heavily infected plants and destroy them away from the field.",
+          "Warn neighbouring farmers, because spores travel by wind and water."
+        ]
+      },
+      "area_guidance": {
+        "small_plot": "Inspect every plant daily during wet weather.",
+        "field": "Inspect field edges and low damp corners first, where blight usually starts."
+      },
+      "escalate_if": "New patches appear every day, stems or fruit are affected, or the weather is cool and wet.",
+      "prevention": [
+        "Use resistant or tolerant varieties if your seed supplier or KVK recommends one.",
+        "Change the nursery bed location every season and keep it free of weeds.",
+        "Do not plant tomato next to an older tomato or potato crop; rotate with non-host crops.",
+        "Keep the field clean: remove crop residue and weeds that can host the disease after harvest."
+      ],
+      "chemical_options": [
+        {
+          "name": "Mancozeb 75% WP",
+          "use_for": "early blight and late blight",
+          "dose": "600 to 800 g in 300 l of water per acre"
+        },
+        {
+          "name": "Azoxystrobin 23% SC",
+          "use_for": "early blight and late blight",
+          "dose": "200 ml in 200 l of water per acre"
+        },
+        {
+          "name": "Copper oxychloride 50% WP",
+          "use_for": "early blight and late blight",
+          "dose": "1000 g in 300 to 400 l of water per acre"
+        },
+        {
+          "name": "Cymoxanil 8% + Mancozeb 64% WP",
+          "use_for": "early blight and late blight",
+          "dose": "600 g in 200 to 300 l of water per acre"
+        }
+      ],
+      "sources": [
+        "NIPHM / DPPQS, Govt. of India: AESA based IPM Package No. 18 - Tomato (niphm.gov.in/IPMPackages/Tomato.pdf)",
+        "Doses are the reference per-acre doses printed in that package. Check the current CIB&RC registered label before use."
+      ]
+    },
+    "Tomato virus": {
+      "crop": "Tomato",
+      "display": "Tomato virus (leaf curl or mosaic)",
+      "type": "viral",
+      "summary": "Curled, yellowed or mottled leaves and stunted growth point to a virus such as leaf curl or mosaic. A plant that is infected cannot be cured.",
+      "pests_to_check": [
+        {
+          "name": "Whitefly",
+          "why": "spreads leaf curl virus; look under young leaves and shake the plant to see small white flies"
+        },
+        {
+          "name": "Aphids and thrips",
+          "why": "can spread some other viruses"
+        },
+        {
+          "name": "No insect for mosaic",
+          "why": "mosaic spreads on hands, clothes, tools, plant debris and seed"
+        }
+      ],
+      "effects_if_untreated": [
+        "Infected plants stay small and give few flowers and little fruit.",
+        "The plant becomes a source: whiteflies pick up the virus and carry it to healthy plants.",
+        "Whitefly honeydew can grow black sooty mould that blocks sunlight.",
+        "Plants infected when young lose the most yield."
+      ],
+      "actions": {
+        "Mild": [
+          "Remove and destroy infected plants early. Do not leave them in the field.",
+          "Remove weeds nearby that can carry the virus or whiteflies.",
+          "Wash hands and tools after touching infected plants. Do not touch healthy plants after sick ones."
+        ],
+        "Moderate": [
+          "Control whiteflies: hang yellow sticky cards (about 10 per acre) near the plants.",
+          "Do not plant new seedlings next to infected plants.",
+          "Ask the extension officer about the whitefly spray options below."
+        ],
+        "Severe": [
+          "Remove the infected plants and talk to the extension officer about whitefly control for the whole area and virus-tolerant varieties for the next season."
+        ]
+      },
+      "area_guidance": {
+        "small_plot": "Remove infected plants and, if you can, cover seedlings with fine net.",
+        "field": "Check the field borders first, where whiteflies enter, and mark patches of infected plants."
+      },
+      "escalate_if": "More than a few plants show it, young plants are affected, or whiteflies are present in large numbers.",
+      "prevention": [
+        "Raise seedlings in the nursery under a fine insect-proof net so whiteflies cannot reach them.",
+        "Grow maize or sorghum around the field as a barrier crop, to keep whiteflies out.",
+        "Use seed from healthy plants, rinse and dry it in shade, and remove infected seedlings before transplanting.",
+        "Ask your KVK or seed supplier about leaf-curl-tolerant varieties (NIPHM lists Arka Ananya, Kashi Vishesh, Kashi Amrit, COTH 2 and TNAU Hybrid Co3).",
+        "Do not grow tomato after tobacco, potato, chilli, capsicum or brinjal."
+      ],
+      "chemical_options": [
+        {
+          "name": "Imidacloprid 17.8% SL",
+          "use_for": "whitefly (carries leaf curl); can also be used as a 15-minute seedling root dip before transplanting",
+          "dose": "60 to 70 ml in 200 l of water per acre"
+        },
+        {
+          "name": "Thiamethoxam 25% WG",
+          "use_for": "whitefly (leaf curl vector)",
+          "dose": "80 g in 200 l of water per acre"
+        },
+        {
+          "name": "Spiromesifen 22.9% SC",
+          "use_for": "whitefly (leaf curl vector)",
+          "dose": "250 ml in 200 l of water per acre"
+        }
+      ],
+      "sources": [
+        "NIPHM / DPPQS, Govt. of India: AESA based IPM Package No. 18 - Tomato (niphm.gov.in/IPMPackages/Tomato.pdf)",
+        "Doses are the reference per-acre doses printed in that package. Check the current CIB&RC registered label before use."
+      ]
+    }
+  }
+}

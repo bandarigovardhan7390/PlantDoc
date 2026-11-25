@@ -1,0 +1,18 @@
+﻿class,leaves,precision,recall,map50,map50_95
+Cassava Brown Leaf Spot,21,0.718,0.81,0.816,0.698
+Cassava Healthy,44,0.849,0.767,0.9,0.726
+Cassava Mosaic,193,0.846,0.819,0.903,0.678
+Cassava Root Rot,7,0.841,0.857,0.944,0.629
+Corn Brown Spots,22,0.823,0.773,0.81,0.603
+Corn Gray leaf spot,6,0.669,0.676,0.647,0.411
+Corn Healthy,16,0.518,0.625,0.64,0.54
+Corn Mildew,5,0.755,0.6,0.713,0.69
+Corn Streak,26,0.787,0.769,0.819,0.569
+Corn Stripe,16,0.745,0.75,0.796,0.509
+Corn Yellowing,51,0.835,0.784,0.868,0.536
+Corn leaf blight,164,0.856,0.805,0.879,0.618
+Corn rust leaf,4,0.885,1.0,0.995,0.995
+Tomato Brown Spots,196,0.731,0.817,0.876,0.727
+Tomato blight leaf,40,0.837,0.825,0.863,0.583
+Tomato healthy,31,0.732,0.516,0.612,0.485
+Tomato virus,15,1.0,0.64,0.811,0.627
